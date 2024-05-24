@@ -1,0 +1,22 @@
+.head {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+    margin-left: 0% !important;
+    margin-right: 0 !important;
+}
+
+h1 {
+    font-weight: bold;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.test {
+    margin-top: 0;
+}
+.headish {
+    margin-bottom: 10px !important;
+    text-align: center !important;
+    margin-left: 0% !important;
+    margin-right: 0 !important;
+}

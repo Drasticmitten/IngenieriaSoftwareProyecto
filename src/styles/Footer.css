@@ -1,0 +1,33 @@
+/* src/styles/Footer.css */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #000000; /* Opcional: puedes cambiar el color en hover si deseas */
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+footer h5 {
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    margin-top: 90px;
+    margin-bottom: 20px; 
+}
