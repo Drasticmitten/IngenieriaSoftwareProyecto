@@ -11,58 +11,54 @@ function Navbar() {
   const [isMenuOpenSecurity, setIsMenuOpenSecurity] = useState(false);
   const [isMenuOpenAccesories, setIsMenuOpenAccesories] = useState(false);
 
-  const toggleMenuProducts = (event) => {
-    event.preventDefault();
+  const toggleMenuProducts = () => {
     setIsMenuOpenProducts(!isMenuOpenProducts);
     setIsMenuOpenAutomation(false);
     setIsMenuOpenSecurity(false);
     setIsMenuOpenAccesories(false);
   };
   
-  const toggleMenuAutomation = (event) => {
-    event.preventDefault();
+  const toggleMenuAutomation = () => {
     setIsMenuOpenAutomation(!isMenuOpenAutomation);
     setIsMenuOpenProducts(false);
     setIsMenuOpenSecurity(false);
     setIsMenuOpenAccesories(false);
   };
   
-  const toggleMenuSecurity = (event) => {
-    event.preventDefault();
+  const toggleMenuSecurity = () => {
     setIsMenuOpenSecurity(!isMenuOpenSecurity);
     setIsMenuOpenProducts(false);
     setIsMenuOpenAutomation(false);
     setIsMenuOpenAccesories(false);
   };
 
-  const toggleMenuAccesories = (event) => {
-    event.preventDefault();
+  const toggleMenuAccesories = () => {
     setIsMenuOpenAccesories(!isMenuOpenAccesories);
     setIsMenuOpenProducts(false);
     setIsMenuOpenAutomation(false);
-    setIsMenuOpenSecurity(false)
+    setIsMenuOpenSecurity(false);
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" style={{position:'fixed-top'}}>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div className="container-fluid">
-        <a style={{marginLeft: '40px'}} className="navbar-brand fs-3" href="/">GATESNFENCES</a>
+        <a style={{ marginLeft: '40px' }} className="navbar-brand fs-3" href="/">GATESNFENCES</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a className={`nav-link ${isMenuOpenProducts ? 'active' : ''}`} href="#" onClick={toggleMenuProducts}>Products</a>
+              <button className={`nav-link ${isMenuOpenProducts ? 'active' : ''}`} onClick={toggleMenuProducts}>Products</button>
             </li>
             <li className="nav-item">
-              <a className={`nav-link ${isMenuOpenAutomation ? 'active' : ''}`} href="#" onClick={toggleMenuAutomation}>Automation and control</a>
+              <button className={`nav-link ${isMenuOpenAutomation ? 'active' : ''}`} onClick={toggleMenuAutomation}>Automation and control</button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={toggleMenuSecurity}>Security</a>
+              <button className="nav-link" onClick={toggleMenuSecurity}>Security</button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={toggleMenuAccesories}>Accessories</a>
+              <button className="nav-link" onClick={toggleMenuAccesories}>Accessories</button>
             </li>
           </ul>
         </div>
@@ -79,7 +75,6 @@ function Navbar() {
       <div className={`dropdown-menu ${isMenuOpenAccesories ? 'show' : ''}`}>
         <OptionAccesories/>
       </div>
-
     </nav>
   );
 }

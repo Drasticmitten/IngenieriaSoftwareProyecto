@@ -1,9 +1,8 @@
+import { Center, Image, Paper, SimpleGrid, Stack, Text } from '@mantine/core';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Footer from './Footer';
 import Navbar from './NavBar';
-import ReadMoreButton from './ReadMoreButton';
-import { BackgroundImage, Center, Title, Box, Text, Grid, GridCol, Card, Image, Group, SimpleGrid, Stack, Paper} from '@mantine/core';
 import './styles/ModernBalconyRailings.css';
 
 function Osco() {
@@ -27,7 +26,7 @@ ornamental iron and garage door industries. </Text>
      
     <SimpleGrid cols={2} spacing="xl" verticalSpacing="lg" mx={{ base: 10, sm: 100, lg: 280 }}>
      <Paper shadow="xs" p={0} radius="md">
-     <Stack justify="center" mx="20px" h={350}>    
+     <Stack justify="center" mx="20px" h={450}>    
         <Image
           src="/osco1.png"
           h={290}
@@ -42,7 +41,7 @@ ornamental iron and garage door industries. </Text>
     </Paper>
 
     <Paper shadow="xs" p={0} radius="md">
-     <Stack justify="center" mx="20px" h={350}>    
+     <Stack justify="center" mx="20px" h={450}>    
         <Image
           src="/osco2.png"
           h={290}
@@ -57,7 +56,7 @@ ornamental iron and garage door industries. </Text>
     </Paper>
 
     <Paper shadow="xs" p={0} radius="md">
-     <Stack justify="center" mx="20px" h={350}>    
+     <Stack justify="center" mx="20px" h={450}>    
         <Image
           src="/osco3.png"
           h={290}
@@ -72,7 +71,7 @@ ornamental iron and garage door industries. </Text>
     </Paper>
 
     <Paper shadow="xs" p={0} radius="md">
-     <Stack justify="center" mx="20px" h={350}>    
+     <Stack justify="center" mx="20px" h={450}>    
         <Image
           src="/osco4.png"
           h={290}
@@ -93,7 +92,7 @@ ornamental iron and garage door industries. </Text>
 
  <SimpleGrid cols={3} spacing="xl" verticalSpacing="lg" mx={{ base: 10, sm: 60, lg: 140 }} my="lg">
      <Paper shadow="xs" p={0} radius="md">
-     <Stack justify="center" mx="20px" h={350}>    
+     <Stack justify="center" mx="20px" h={450}>    
         <Image
           src="/osco5.png"
           h={290}
@@ -108,7 +107,7 @@ ornamental iron and garage door industries. </Text>
     </Paper>
 
     <Paper shadow="xs" p={0} radius="md">
-     <Stack justify="center" mx="20px" h={350}>    
+     <Stack justify="center" mx="20px" h={450}>    
         <Image
           src="/osco6.png"
           h={290}
@@ -123,7 +122,7 @@ ornamental iron and garage door industries. </Text>
     </Paper>
 
     <Paper shadow="xs" p={0} radius="md">
-     <Stack justify="center" mx="20px" h={350}>    
+     <Stack justify="center" mx="20px" h={450}>    
         <Image
           src="/osco7.png"
           h={290}
@@ -138,7 +137,7 @@ ornamental iron and garage door industries. </Text>
     </Paper>
 
     <Paper shadow="xs" p={0} radius="md">
-     <Stack justify="center" mx="20px" h={350}>    
+     <Stack justify="center" mx="20px" h={450}>    
         <Image
           src="/osco8.png"
           h={290}
@@ -153,7 +152,7 @@ ornamental iron and garage door industries. </Text>
     </Paper>
 
     <Paper shadow="xs" p={0} radius="md">
-     <Stack justify="center" mx="20px" h={350}>    
+     <Stack justify="center" mx="20px" h={450}>    
         <Image
           src="/osco9.png"
           h={290}
@@ -168,7 +167,7 @@ ornamental iron and garage door industries. </Text>
     </Paper>
 
     <Paper shadow="xs" p={0} radius="md">
-     <Stack justify="center" mx="20px" h={350}>    
+     <Stack justify="center" mx="20px" h={450}>    
         <Image
           src="/osco10.png"
           h={290}

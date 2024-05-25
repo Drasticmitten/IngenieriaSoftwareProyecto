@@ -1,9 +1,8 @@
+import { Center, Group, Image, Paper, SimpleGrid, Text } from '@mantine/core';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Footer from './Footer';
 import Navbar from './NavBar';
-import ReadMoreButton from './ReadMoreButton';
-import { BackgroundImage, Center, Title, Box, Text, Grid, GridCol, Card, Image, Group, SimpleGrid, Stack, Paper} from '@mantine/core';
 import './styles/ModernBalconyRailings.css';
 
 function Elite() {

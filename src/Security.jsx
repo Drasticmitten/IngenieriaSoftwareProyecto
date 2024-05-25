@@ -5,8 +5,21 @@ function OptionSecurity() {
     return (
         <div>
             <div style={{ marginLeft: '4rem', display: 'flex', flexDirection: 'column'}}>
-                    <a style={{ fontWeight: 'bold', color: 'black' }} href='#'>Safety Equipment</a>
-                    <a style={{ color: 'grey' }} href='/Loop'>Safety Loops</a>
+            <button 
+                    style={{ 
+                        fontWeight: 'bold', 
+                        color: 'black', 
+                        background: 'none', 
+                        border: 'none', 
+                        padding: 0, 
+                        margin: 0, 
+                        cursor: 'pointer', 
+                        textDecoration: 'underline' 
+                    }} 
+                    onClick={handleClick}
+                >
+                    Safety Equipment
+                </button>                    <a style={{ color: 'grey' }} href='/Loop'>Safety Loops</a>
                 </div>
         </div>
     );

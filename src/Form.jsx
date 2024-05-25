@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
 import {
+  Box,
   Button,
-  TextInput,
-  Select,
-  Textarea,
-  Modal,
-  Group,
-  Box, Container,
   Center,
+  Container,
+  Modal,
+  Select,
+  TextInput,
+  Textarea
 } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
 import Footer from './Footer';
 import Navbar from './NavBar';
-import ReadMoreButton from './ReadMoreButton';
 import './styles/ModernBalconyRailings.css';
 
 const ContactForm = () => {
