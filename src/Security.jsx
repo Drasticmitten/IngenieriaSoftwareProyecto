@@ -16,7 +16,6 @@ function OptionSecurity() {
                         cursor: 'pointer', 
                         textDecoration: 'underline' 
                     }} 
-                    onClick={handleClick}
                 >
                     Safety Equipment
                 </button>                    <a style={{ color: 'grey' }} href='/Loop'>Safety Loops</a>

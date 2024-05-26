@@ -1,3 +1,6 @@
+import { Center, Image, SimpleGrid, Stack, Text } from '@chakra-ui/react'; // Importa los componentes necesarios de Chakra UI
+import { Paper } from '@mantine/core';
+import { Group } from '@mui/icons-material';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Footer from './Footer';
