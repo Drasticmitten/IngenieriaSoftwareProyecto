@@ -1,27 +1,34 @@
-name: Build
+name: SonarQube Analysis
 
 on:
   push:
     branches:
       - main
 
-
 jobs:
-  build:
-    name: Build and analyze
+  sonarqube-analysis:
+    name: SonarQube Analysis
     runs-on: ubuntu-latest
-    
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Java
+        uses: actions/setup-java@v2
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - uses: sonarsource/sonarqube-scan-action@master
+          java-version: '11'
+
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-      # If you wish to fail your job when the Quality Gate is red, uncomment the
-      # following lines. This would typically be used to fail a deployment.
-      # - uses: sonarsource/sonarqube-quality-gate-action@master
+          SONAR_TOKEN: sqp_42a4380f38ef934b3a795dd8acfdca4d612e03b9
+          SONAR_HOST_URL: http://20.55.20.115:9000
+
+      # Si deseas fallar el job cuando la Puerta de Calidad (Quality Gate) falle, descomenta las siguientes líneas.
+      # Esto normalmente se utilizaría para evitar un despliegue si el análisis no pasa el control de calidad.
+      # - name: SonarQube Quality Gate
+      #   uses: sonarsource/sonarqube-quality-gate-action@master
       #   timeout-minutes: 5
       #   env:
       #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
