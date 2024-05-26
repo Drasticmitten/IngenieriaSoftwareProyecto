@@ -17,12 +17,13 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v2
         with:
+          distribution: 'temurin'  # Puedes cambiar a 'zulu' u otra distribución si lo prefieres
           java-version: '11'
 
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
         env:
-          SONAR_TOKEN: sqp_42a4380f38ef934b3a795dd8acfdca4d612e03b9
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: http://20.55.20.115:9000
 
       # Si deseas fallar el job cuando la Puerta de Calidad (Quality Gate) falle, descomenta las siguientes líneas.
